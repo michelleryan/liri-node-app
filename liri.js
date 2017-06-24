@@ -27,19 +27,28 @@ var client = new twitter({
   access_token_secret: twKeys.access_token_secret
 });
 
-//post tweets
-// client.post('statuses/update', {status: 'Wow, this is amazing to post tweets from my app!'},  function(error, tweet, response) {
-//   if(error) throw error;
-//   console.log(tweet);  // Tweet body. 
-//   //console.log(response);  // Raw response object. 
-// });
+//post tweets into my twitter account
+// var tweetInput = process.argv[3];
+// var tparam = {status: tweetInput};
 
+// if (command == 'post-tweet') {
+// 	client.post('statuses/update', tparam,  function(error, tweet, response) {
+// 	  if(error) throw error;
+// 	  //console.log(tweet);  // Tweet body. 
+// 	  //console.log(response);  // Raw response object. 
+// 	});
+// }
 //get my tweets
 if (command == 'my-tweets') {
 	var params = {screen_name: 'mryan85268'};
 	client.get('statuses/user_timeline', params, function(error, tweets, response){
 		if (!error) {
-			console.log(tweets[1].text);
+			//print out the last 20 tweets
+			//console.log("tweet: " + tweets[0].text);
+			for (let i=0; i<20; i++) {
+				console.log("tweet: " + tweets[i].text + ",Created at: " + tweets[i].created_at);
+			}
+			
 		}
 	});
 }

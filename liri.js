@@ -92,6 +92,10 @@ if (command == 'spotify-this-song') {
 			console.log(songInfo.name);
 			console.log(songInfo.href);
 			console.log(songInfo.album.name);
+			var songResult = "artist: " + songInfo.artists[0].name 
+									+ " || Song: " + songInfo.name + " || URL: " + songInfo.href
+									+ " || Album: " + songInfo.album.name;
+			writeLog(command,songResult);
 		}
 	});
 
@@ -136,10 +140,14 @@ if (command=='do-what-it-says') {
 		spotifyClient.search(song, function(error, data){
 			if (!error) {
 				var songInfo = data.tracks.items[0];
+				var songResult = "artist: " + songInfo.artists[0].name 
+									+ " || Song: " + songInfo.name + " || URL: " + songInfo.href
+									+ " || Album: " + songInfo.album.name;
 				console.log(songInfo.artists[0].name);
 				console.log(songInfo.name);
 				console.log(songInfo.href);
 				console.log(songInfo.album.name);
+				writeLog(command, songResult);
 				}
 			});
 			

@@ -1,0 +1,21 @@
+
+my-tweets, tweet: And 20!,Created at: Sat Jun 24 03:20:15 +0000 2017
+my-tweets, tweet: Tweet 19,Created at: Sat Jun 24 03:20:04 +0000 2017
+my-tweets, tweet: We can be friends,Created at: Sat Jun 24 03:19:20 +0000 2017
+my-tweets, tweet: How you doin?,Created at: Sat Jun 24 03:19:05 +0000 2017
+my-tweets, tweet: Almost there...,Created at: Sat Jun 24 03:18:29 +0000 2017
+my-tweets, tweet: My teenager is so messy!,Created at: Sat Jun 24 03:17:58 +0000 2017
+my-tweets, tweet: Just wait until you have kids...,Created at: Sat Jun 24 03:17:29 +0000 2017
+my-tweets, tweet: Smile, Be Happy!,Created at: Sat Jun 24 03:17:14 +0000 2017
+my-tweets, tweet: Time to make the donuts...,Created at: Sat Jun 24 03:16:30 +0000 2017
+my-tweets, tweet: Do I have 20 tweets yet?,Created at: Sat Jun 24 03:16:16 +0000 2017
+my-tweets, tweet: UofA almuni here!,Created at: Sat Jun 24 03:15:57 +0000 2017
+my-tweets, tweet: The next Star Wars movie is going to be awesome!,Created at: Sat Jun 24 03:15:09 +0000 2017
+my-tweets, tweet: Have a taco!,Created at: Sat Jun 24 03:14:36 +0000 2017
+my-tweets, tweet: My favorite food is mexican food,Created at: Sat Jun 24 03:14:08 +0000 2017
+my-tweets, tweet: I can't wait until football season starts,Created at: Sat Jun 24 03:13:45 +0000 2017
+my-tweets, tweet: This is done by my tweet function,Created at: Sat Jun 24 03:13:21 +0000 2017
+my-tweets, tweet: My favorite football team is the Arizona Cardinals!,Created at: Sat Jun 24 03:12:37 +0000 2017
+my-tweets, tweet: My,Created at: Sat Jun 24 03:11:45 +0000 2017
+my-tweets, tweet: Wow, this is amazing to post tweets from my app!,Created at: Sat Jun 24 02:24:30 +0000 2017
+my-tweets, tweet: I Love Twitter,Created at: Sat Jun 24 02:22:35 +0000 2017

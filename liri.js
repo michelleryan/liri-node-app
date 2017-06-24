@@ -10,6 +10,7 @@
 const fs = require("fs");
 var keys = require("./keys.js");
 
+const command = process.argv[2];
 
 
 const twitter = require("twitter"); //consumer_key, consumer_secret, access_token_key, access_token_secret
@@ -26,10 +27,21 @@ var client = new twitter({
   access_token_secret: twKeys.access_token_secret
 });
 
-client.post('statuses/update', {status: 'I Love Twitter'},  function(error, tweet, response) {
-  if(error) throw error;
-  console.log(tweet);  // Tweet body. 
-  console.log(response);  // Raw response object. 
-});
+//post tweets
+// client.post('statuses/update', {status: 'Wow, this is amazing to post tweets from my app!'},  function(error, tweet, response) {
+//   if(error) throw error;
+//   console.log(tweet);  // Tweet body. 
+//   //console.log(response);  // Raw response object. 
+// });
+
+//get my tweets
+if (command == 'my-tweets') {
+	var params = {screen_name: 'mryan85268'};
+	client.get('statuses/user_timeline', params, function(error, tweets, response){
+		if (!error) {
+			console.log(tweets[1].text);
+		}
+	});
+}
 
 
